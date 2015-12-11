@@ -10,3 +10,14 @@ pom.xml.asc
 .lein-plugins/
 .lein-failures
 .nrepl-port
+
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
