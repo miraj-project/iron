@@ -1,6 +1,6 @@
 (ns polymer.iron
   (:refer-clojure :exclude [list meta])
-  (:require [polymer.core :refer [make-polymer-fns]]))
+  (:require [miraj.markup :refer [make-tag-fns]]))
 
 (alter-meta! *ns* (fn [m] (assoc m :co-ns true)))
 
@@ -44,4 +44,4 @@
    "validatable-behavior"
    "validator-behavior"])
 
-(make-polymer-fns "iron" polymer-iron-tags)
+(make-tag-fns "iron-" polymer-iron-tags nil)

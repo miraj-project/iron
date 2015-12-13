@@ -1,5 +1,5 @@
 # polymer.iron
-Polymer Iron Elements
+Polymer Iron clojure functions
 
 # usage
 
