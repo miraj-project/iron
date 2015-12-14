@@ -1,5 +1,5 @@
 (ns polymer.iron
-  (:refer-clojure :exclude [list meta])
+  (:refer-clojure :exclude [list])
   (:require [miraj.markup :refer [make-tag-fns]]))
 
 (alter-meta! *ns* (fn [m] (assoc m :co-ns true)))
