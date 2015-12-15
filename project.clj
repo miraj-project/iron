@@ -5,4 +5,4 @@
             :url "http://polymer.github.io/LICENSE.txt"}
   :dependencies [[org.clojure/clojure "1.8.0-RC3"]
                  [miraj/markup "0.1.0-SNAPSHOT"]
-                 [polymer/iron.elements "1.2.3-SNAPSHOT"]])
+                 [polymer/elements.iron "1.2.3-SNAPSHOT"]])
