@@ -1,0 +1,33 @@
+
+;; iron-a11y-keys-behavior/iron-a11y-keys-behavior.html
+;; iron-checked-element-behavior/iron-checked-element-behavior.html
+;; iron-fit-behavior/iron-fit-behavior.html
+;; iron-form-element-behavior/iron-form-element-behavior.html
+;; iron-menu-behavior/iron-menu-behavior.html
+;; iron-menu-behavior/iron-menubar-behavior.html
+;; iron-overlay-behavior/iron-overlay-behavior.html
+;; iron-overlay-behavior/test/iron-overlay-behavior.html
+;; iron-range-behavior/iron-range-behavior.html
+;; iron-resizable-behavior/iron-resizable-behavior.html
+;; iron-scroll-target-behavior/iron-scroll-target-behavior.html
+;; iron-validatable-behavior/iron-validatable-behavior.html
+;; iron-validator-behavior/iron-validator-behavior.html
+
+[{:ns miraj.polymer.iron.behaviors
+  :href "bower_components"
+  :behaviors [{:fn Button
+               :name PaperButtonBehavior
+               :properties [:active :noink]
+               :listeners true
+               :href "paper-behaviors/paper-button-behavior.html"}]}
+
+ {:ns miraj.polymer.iron.input.behaviors
+  :behaviors [{:fn Input
+               :name PaperInputBehavior :href "paper-input/paper-input-behavior.html"}
+              {:fn InputAddon
+               :name PaperInputAddonBehavior :href "paper-input/paper-input-addon-behavior.html"}]}
+
+ {:ns miraj.polymer.iron.item.behaviors
+  :behaviors [{:fn Item
+               :name PaperItemBehavior :href "paper-item/paper-item-behavior.html"}]}
+ ]

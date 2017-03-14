@@ -1,0 +1,281 @@
+[#:miraj{:ns  miraj.polymer.iron
+         :defelements true
+         :nss []
+         :refer-clojure {:exclude [list meta]}
+         :lib  :miraj.polymer.iron
+         :name "iron-elements"
+         :vendor :polymer
+         :base {:miraj/assets #:miraj{:bower "PolymerElements/iron-elements"
+                                      :href "/bower_components/"}
+                :miraj/doc #:miraj{:short "Miraj Polymer Iron elements"
+                                   :href  "https://www.webcomponents.org/element/PolymerElements/"}}
+
+         :exports [#:miraj{:defn a11y-announcer
+                           :html-tag :iron-a11y-announcer
+                           :assets #:miraj{:href "iron-a11y-announcer/iron-a11y-announcer.html"
+                                           :bower "PolymerElements/iron-a11y-announcer"
+                                           :version "1.0.5"}
+                           :doc #:miraj{:short "iron-a11y-announcer is a singleton element that is intended to add a11y to features that require on-demand announcement from screen readers."
+                                        :href "iron-a11y-announcer"}
+                           :extends Polymer.Element ;; Polymer.LegacyElement
+                           :categories []}
+
+                   #:miraj{:defn a117-keys
+                           :html-tag :iron-a11y
+                           :doc #:miraj{:short "iron-a11y-keys provides a cross-browser interface for processing keyboard commands."
+                                        :href "iron-a11y-keys"}
+                           :assets #:miraj{:href "iron-a11y-keys/iron-a11y-keys.html"
+                                           :bower "PolymerElements/iron-a11y-keys"
+                                           :version "1.0.6"}
+                           :extends Polymer.Element
+                           :categories []}
+
+                   #:miraj{:defn ajax
+                           :html-tag :iron-ajax
+                           :doc #:miraj{:short " iron-ajax docstring"
+                                        :href "iron-ajax"}
+                           :assets #:miraj{:href "iron-ajax/iron-ajax.html"
+                                           :bower "PolymerElements/iron-ajax"
+                                           :version "1.4.3"}}
+
+                   #:miraj{:defn autogrow-textarea
+                           :html-tag :iron-autogrow-textarea
+                           :doc #:miraj{:short "autogrow-textarea docstring"
+                                        :href "iron-autogrow-textarea"}
+                           :assets #:miraj{:href "iron-autogrow-textarea/iron-autogrow-textarea.html"
+                                           :bower "PolymerElements/iron-autogrow-textarea"
+                                           :version "1.0.15"}}
+
+                   #:miraj{:defn collapse
+                           :html-tag :iron-collapse
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-collapse"}
+                           :assets #:miraj{:href "iron-collapse/iron-collapse.html"
+                                           :bower "PolymerElements/iron-collapse"
+                                           :version "1.3.0"}}
+
+                   #:miraj{:defn component-page
+                           :html-tag :iron-component-page
+                           :doc #:miraj{:short "iron-component-page docstring"
+                                        :href "iron-component-page"}
+                           :assets #:miraj{:href "iron-component-page/iron-component-page.html"
+                                           :bower "PolymerElements/iron-component-page"
+                                           :version "1.1.8"}}
+
+                   #:miraj{:defn demo-snippet
+                           :html-tag :demo-snippet
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-demo-snippet"}
+                           :assets #:miraj{:href "iron-demo-helpers/demo-snippet.html"
+                                           :bower "PolymerElements/iron-demo-helpers"
+                                           :version "1.2.5"}}
+
+                   #:miraj{:defn url-bar
+                           :html-tag :url-bar
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-url-bar"}
+                           :assets #:miraj{:href "iron-demo-helpers/url-bar.html"
+                                           :bower "PolymerElements/iron-demo-helpers"
+                                           :version "1.2.5"}}
+
+                   #:miraj{:defn doc-viewer
+                           :html-tag :iron-doc-viewer
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-doc-viewer"}
+                           :assets #:miraj{:href "iron-doc-viewer/iron-doc-viewer.html"
+                                           :bower "PolymerElements/iron-doc-viewer"
+                                           :version "1.1.0"}}
+
+                   #:miraj{:defn dropdown
+                           :html-tag :iron-dropdown
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-dropdown"}
+                           :assets #:miraj{:href "iron-dropdown/iron-dropdown.html"
+                                           :bower "PolymerElements/iron-dropdown"
+                                           :version "1.5.5"}}
+
+                   #:miraj{:defn form
+                           :html-tag :iron-form
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-form"}
+                           :assets #:miraj{:href "iron-form/iron-form.html"
+                                           :bower "PolymerElements/iron-form"
+                                           :version "1.1.4"}}
+
+                   #:miraj{:defn icon
+                           :html-tag :iron-icon
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-icon"}
+                           :assets #:miraj{:href "iron-icon/iron-icon.html"
+                                           :bower "PolymerElements/iron-icon"
+                                           :version "1.0.12"}}
+
+                   #:miraj{:defn iconset
+                           :html-tag :iron-iconset
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-iconset"}
+                           :assets #:miraj{:href "iron-iconset/iron-iconset.html"
+                                           :bower "PolymerElements/iconset"
+                                           :version "1.0.5"}}
+
+                   #:miraj{:defn iconset-svg
+                           :html-tag :iron-iconset-svg
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-iconset-svg"}
+                           :assets #:miraj{:href "iron-iconset-svg/iron-iconset-svg.html"
+                                           :bower "PolymerElements/iron-iconset-svg"
+                                           :version "1.1.0"}}
+
+                   #:miraj{:defn image
+                           :html-tag :iron-image
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-image"}
+                           :assets #:miraj{:href "iron-image/iron-image.html"
+                                           :bower "PolymerElements/iron-image"
+                                           :version "1.2.5"}}
+
+                   #:miraj{:defn input
+                           :html-tag :iron-input
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-input"}
+                           :assets #:miraj{:href "iron-input/iron-input.html"
+                                           :bower "PolymerElements/iron-input"
+                                           :version "1.0.10"}}
+
+                   #:miraj{:defn jsonp-library
+                           :html-tag :iron-jsonp-library
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-jsonp-library"}
+                           :assets #:miraj{:href "iron-jsonp-library/iron-jsonp-library.html"
+                                           :bower "PolymerElements/iron-jsonp-library"
+                                           :version "1.0.4"}}
+
+                   #:miraj{:defn label
+                           :html-tag :iron-label
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-label"}
+                           :assets #:miraj{:href "iron-label/iron-label.html"
+                                           :bower "PolymerElements/iron-label"
+                                           :version "1.0.2"}}
+
+                   #:miraj{:defn list
+                           :html-tag :iron-list
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-list"}
+                           :assets #:miraj{:href "iron-list/iron-list.html"
+                                           :bower "PolymerElements/iron-list"
+                                           :version "1.4.1"}}
+
+                   #:miraj{:defn localstorage
+                           :html-tag :iron-localstorage
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-localstorage"}
+                           :assets #:miraj{:href "iron-localstorage/iron-localstorage.html"
+                                           :bower "PolymerElements/iron-localstorage"
+                                           :verion "1.0.6"}}
+
+                   #:miraj{:defn location
+                           :html-tag :iron-location
+                           :doc #:miraj{:short "iron-location docstring"
+                                        :href "iron-location"}
+                           :assets #:miraj{:href "iron-location/iron-location.html"
+                                           :bower "PolymerElements/iron-location"
+                                           :version "0.8.11"}}
+
+                   #:miraj{:defn query-params
+                           :html-tag :iron-query-params
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-query-params"}
+                           :assets #:miraj{:href "iron-location/iron-query-params.html"
+                                           :bower "PolymerElements/iron-location"
+                                           :version "0.8.11"}}
+
+                   #:miraj{:defn media-query
+                           :html-tag :iron-media-query
+                           :doc #:miraj{:short "iron-media-query docstring"
+                                        :href "iron-media-query"}
+                           :assets #:miraj{:href "iron-media-query/iron-media-query"
+                                           :bower "PolymerElements/iron-media-query"
+                                           :version "1.0.8"}}
+
+                   #:miraj{:defn meta
+                           :html-tag :iron-meta
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-meta"}
+                           :assets #:miraj{:href "iron-meta/iron-meta.html"
+                                           :bower "PolymerElements/iron-meta"
+                                           :version "1.1.2"}}
+
+                   #:miraj{:defn pages
+                           :html-tag :iron-pages
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-pages"}
+                           :assets #:miraj{:href "iron-pages/iron-pages.html"
+                                           :bower "PolymerElements/iron-pages"
+                                           :version "1.0.8"}}
+
+                   #:miraj{:defn request
+                           :html-tag :iron-request
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-request"}
+                           :assets #:miraj{:href "iron-ajax/iron-request.html"
+                                           :bower "PolymerElements/iron-ajax"
+                                           :version "1.4.3"}}
+
+                   #:miraj{:defn selector
+                           :html-tag :iron-selector
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-selector"}
+                           :assets #:miraj{:href "iron-selector/iron-selector.html"
+                                           :bower "PolymerElements/iron-selector"
+                                           :version "1.5.2"}}
+
+                   #:miraj{:defn signals
+                           :html-tag :iron-signals
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-signals"}
+                           :assets #:miraj{:href "iron-signals/iron-signals.html"
+                                           :bower "PolymerElements/iron-signals"
+                                           :version "1.0.3"}}
+
+                   #:miraj{:defn swipeable-container
+                           :html-tag :iron-swipeable-container
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-swipeable-container"}
+                           :assets #:miraj{:href "iron-swipeable-container/iron-swipeable-container.html"
+                                           :bower "PolymerElements/iron-swipeable-container"
+                                           :version "1.0.3"}}
+
+                   #:miraj{:defn test-helpers
+                           :html-tag :iron-test-helpers
+                           :doc #:miraj{:short " docstring"
+                                        :href "iron-test-helpers"}
+                           :assets #:miraj{:href "iron-test-helpers/iron-test-helpers.html"
+                                           :bower "PolymerElements/iron-test-helpers"
+                                           :version "1.4.0"}}
+                   ]
+         }
+
+;; #:miraj{:ns  miraj.polymer.iron.icons
+;;          :defelements true
+;;          :nss []
+;;          ;; :refer-clojure {:exclude [list meta]}
+;;          :lib  :polymer
+;;          :name "iron-icons"
+;;          :vendor :polymer
+;;          :base {:assets {:bower "PolymerElements/iron-elements"
+;;                          :href "/bower_components/"}
+;;                 :doc #:miraj{:short "Miraj Polymer Iron elements"
+;;                              :href  "https://www.webcomponents.org/element/PolymerElements/"}}
+
+;;          :exports [#:miraj{:defn device
+;;                            :html-tag :device-icons
+;;                            :doc #:miraj{:short "device icons"
+;;                                         :href ""}
+;;                            :assets #:miraj{:href "iron-icons/device-icons.html"
+;;                                            :bower "PolymerElements/iron-icons"
+;;                                            :version "1.2.0"}
+;;                            :extends Polymer.Element
+;;                            :categories []}]
+;;          }
+ ]

@@ -1,0 +1,170 @@
+[#:miraj{:ns   miraj.polymer.iron.styles
+         :defstyles true
+         :nss []
+         :lib  :polymer
+         :name "iron-icons"
+         :vendor :polymer
+         :base #:miraj{:assets #:miraj{:bower [{:cmd "PolymerElements/iron-icons"}]
+                                       :href "/bower_components/"}
+                       :doc #:miraj{:short "Miraj Polymer Iron Style resources"
+                                    :href "https://www.webcomponents.org/element/PolymerElements/"}}
+         :styles [#:miraj{:def demo
+                          :module demo-pages-shared-styles
+                          :assets #:miraj{:href "iron-demo-helpers/demo-pages-shared-styles.html"
+                                          :bower "PolymerElements/demo-helpers"
+                                          :version "1.2.5"}
+                          :doc #:miraj{:short ""
+                                       :href "iron-demo-helpers"}}
+
+                  #:miraj{:def doc-property
+                          :assets #:miraj{:href "iron-doc-viewer/iron-doc-property-styles.html"
+                                          :bower "PolymerElements/iron-doc-viewer"
+                                          :version "1.1.0"}
+                          :doc #:miraj{:short ""
+                                       :href "iron-doc-viewer"}}
+
+                  #:miraj{:def doc-viewer
+                          :assets #:miraj{:href "iron-doc-viewer/iron-doc-viewer-styles.html"
+                                          :bower "PolymerElements/iron-doc-viewer"
+                                          :version "1.1.0"}
+                          :doc #:miraj{:short ""
+                                       :href "iron-doc-viewer"}}
+
+                  #:miraj{:def flex-mixins
+                          :doc #:miraj{:short " docstring"
+                                       :href "iron-flex-layout"}
+                          :assets #:miraj{:href "iron-flex-layout/iron-flex-layout.html"
+                                          :bower "PolymerElements/iron-flex-layout"
+                                          :version "1.3.1"}}
+
+                  #:miraj{:def flex
+                          :module iron-flex
+                          :doc #:miraj{:short " docstring"
+                                       :href "iron-flex-layout"}
+                          :assets #:miraj{:href "iron-flex-layout/iron-flex-layout-classes.html"
+                                          :bower "PolymerElements/iron-flex-layout"
+                                          :version "1.3.1"}}
+
+                  #:miraj{:def flex-reverse
+                          :module iron-flex-reverse
+                          :doc #:miraj{:short " docstring"
+                                       :href "iron-flex-layout"}
+                          :assets #:miraj{:href "iron-flex-layout/iron-flex-layout-classes.html"
+                                          :bower "PolymerElements/iron-flex-layout"
+                                          :version "1.3.1"}}
+
+                  #:miraj{:def flex-alignment
+                          :module iron-flex-alignment
+                          :doc #:miraj{:short " docstring"
+                                       :href "iron-flex-layout"}
+                          :assets #:miraj{:href "iron-flex-layout/iron-flex-layout-classes.html"
+                                          :bower "PolymerElements/iron-flex-layout"
+                                          :version "1.3.1"}}
+
+                  #:miraj{:def flex-factors
+                          :module iron-flex-factors
+                          :doc #:miraj{:short " docstring"
+                                       :href "iron-flex-layout"}
+                          :assets #:miraj{:href "iron-flex-layout/iron-flex-layout-classes.html"
+                                          :bower "PolymerElements/iron-flex-layout"
+                                          :version "1.3.1"}}
+
+                  #:miraj{:def positioning
+                          :module iron-positioning
+                          :doc #:miraj{:short " docstring"
+                                       :href "iron-flex-layout"}
+                          :assets #:miraj{:href "iron-flex-layout/iron-flex-layout-classes.html"
+                                          :bower "PolymerElements/iron-flex-layout"
+                                          :version "1.3.1"}}
+
+
+                  ]}
+
+ #:miraj{:ns   miraj.polymer.iron.icons
+         :defstyles true
+         :nss []
+         :lib  :polymer
+         :name "iron-icons"
+         :vendor :polymer
+         :base #:miraj{:assets #:miraj{:bower [{:cmd "PolymerElements/iron-icons"}]
+                                       :href "/bower_components/"}
+                       :doc #:miraj{:short "Miraj Polymer Iron Style resources"
+                                    :href "https://www.webcomponents.org/element/PolymerElements/"}}
+         :styles [#:miraj{:def av
+                          :assets #:miraj{:href "iron-icons/av-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}
+                          :doc #:miraj{:short "A set of audio-video-related icons."
+                                       :href "iron-icons"}}
+
+                  #:miraj{:def communication
+                          :assets #:miraj{:href "iron-icons/communication-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}
+                          :doc #:miraj{:short "A set of communication-related icons."
+                                       :href "iron-icons"}}
+
+                  #:miraj{:def device
+                          :assets #:miraj{:href "iron-icons/device-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}
+                          :doc #:miraj{:short "A set of device icons."
+                                       :href "iron-icons"}}
+
+                  #:miraj{:def editor
+                          :assets #:miraj{:href "iron-icons/editor-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}
+                          :doc #:miraj{:short "A set of editor icons."
+                                       :href "iron-icons"}}
+
+                  #:miraj{:def hardware
+                          :assets #:miraj{:href "iron-icons/hardware-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}
+                          :doc #:miraj{:short "A set of hardware icons."
+                                       :href "iron-icons"}}
+
+                  #:miraj{:def image
+                          :assets #:miraj{:href "iron-icons/image-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}
+                          :doc #:miraj{:short "A set of image icons."
+                                       :href "iron-icons"}}
+
+                  #:miraj{:def iron
+                          :doc #:miraj{:short " docstring"
+                                       :href "iron-icons"}
+                          :assets #:miraj{:href "iron-icons/iron-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}}
+
+                  #:miraj{:def maps
+                          :assets #:miraj{:href "iron-icons/maps-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}
+                          :doc #:miraj{:short "A set of map icons."
+                                       :href "iron-icons"}}
+
+                  #:miraj{:def notification
+                          :assets #:miraj{:href "iron-icons/notification-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}
+                          :doc #:miraj{:short "A set of notificatio9n icons."
+                                       :href "iron-icons"}}
+
+                  #:miraj{:def places
+                          :assets #:miraj{:href "iron-icons/places-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}
+                          :doc #:miraj{:short "A set of places icons."
+                                       :href "iron-icons"}}
+
+                  #:miraj{:def social
+                          :assets #:miraj{:href "iron-icons/social-icons.html"
+                                          :bower "PolymerElements/iron-icons"
+                                          :version "1.2.0"}
+                          :doc #:miraj{:short "A set of social icons."
+                                       :href "iron-icons"}}
+                  ]}]
+
