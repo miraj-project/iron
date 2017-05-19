@@ -2,12 +2,12 @@
   (:require [miraj.core :as miraj]
             [miraj.html :as h]
             [cheshire.core :as json :refer :all]
+
             ;; for testing only:
-            [miraj.compiler :as wc]
             [miraj.co-dom :as x]
             :reload))
 
-(miraj/defpage ^{:miraj/demonstrates miraj.polymer.iron/pages} index
+(miraj/defpage
   "Polymer Iron Pages Demo."
 
   ;; html metadata first

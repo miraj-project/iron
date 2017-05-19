@@ -1,13 +1,11 @@
 (ns miraj.polymer.iron.demos.input
   (:require [miraj.core :as miraj]
             [miraj.html :as h]
-
             ;; for testing only:
-            [miraj.compiler :as wc]
             [miraj.co-dom :as x]
             :reload))
 
-(miraj/defpage ^{:miraj/demonstrates miraj.polymer.iron/input} index
+(miraj/defpage index
   "Polymer Iron Input Demo."
 
   ;; html metadata first
@@ -22,6 +20,7 @@
   ;; (:js [{:src "main.js"}])
 
   (:body :!unresolved
+
    (h/style {:is "custom-style"} "
 
     .vertical-section {
@@ -72,7 +71,8 @@
 
           (h/input :!prevent-invalid-input {:is "iron-input" :allowed-pattern "[!@#0-9]"}))
 
-   (h/script "
+   (h/script {:type "text/javascript"} "
+
     var scope = document.querySelector('template[is=dom-bind]');
 
     scope.setValue = function(event) {
