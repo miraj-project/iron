@@ -5,7 +5,7 @@
          :name "iron-icons"
          :vendor :polymer
          :base #:miraj{:assets #:miraj{:bower [{:cmd "PolymerElements/iron-icons"}]
-                                       :href "/bower_components/"}
+                                       :href "/miraj/polymer/assets/"}
                        :doc #:miraj{:short "Miraj Polymer Iron Style resources"
                                     :href "https://www.webcomponents.org/element/PolymerElements/"}}
          :styles [#:miraj{:def demo
@@ -87,7 +87,7 @@
          :name "iron-icons"
          :vendor :polymer
          :base #:miraj{:assets #:miraj{:bower [{:cmd "PolymerElements/iron-icons"}]
-                                       :href "/bower_components/"}
+                                       :href "/miraj/polymer/assets/"}
                        :doc #:miraj{:short "Miraj Polymer Iron Style resources"
                                     :href "https://www.webcomponents.org/element/PolymerElements/"}}
          :styles [#:miraj{:def av

@@ -5,8 +5,8 @@
          :lib  :miraj.polymer.iron
          :name "iron-elements"
          :vendor :polymer
-         :base {:miraj/assets #:miraj{:bower "PolymerElements/iron-elements"
-                                      :href "/bower_components/"}
+         :base {:miraj/assets #:miraj{:bower [{:cmd "PolymerElements/iron-elements"}]
+                                      :href "/miraj/polymer/assets/"}
                 :miraj/doc #:miraj{:short "Miraj Polymer Iron elements"
                                    :href  "https://www.webcomponents.org/element/PolymerElements/"}}
 
@@ -264,7 +264,7 @@
 ;;          :name "iron-icons"
 ;;          :vendor :polymer
 ;;          :base {:assets {:bower "PolymerElements/iron-elements"
-;;                          :href "/bower_components/"}
+;;                          :href "/miraj/polymer/assets/"}
 ;;                 :doc #:miraj{:short "Miraj Polymer Iron elements"
 ;;                              :href  "https://www.webcomponents.org/element/PolymerElements/"}}
 
