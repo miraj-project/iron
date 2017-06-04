@@ -5,22 +5,20 @@
  :resource-paths #{"src/main/clj"}  ;; "dev-resources"}
  :source-paths #{"edn"} ;; "demos/clj"}
 
- ;; :checkouts '[[miraj/core                    "0.1.0-SNAPSHOT"]
+ ;; :checkouts '[[miraj/core                    "1.0.0-SNAPSHOT"]
  ;;              [miraj/co-dom                  "1.0.0-SNAPSHOT"]
- ;;              [miraj.polymer/dom             "1.2.3-SNAPSHOT"]
  ;;              ;; [miraj/boot-miraj "0.1.0-SNAPSHOT"]
  ;;              ]
 
  :repositories #(conj % ["clojars" {:url "https://clojars.org/repo/"}])
 
- :dependencies   '[[org.clojure/clojure  "1.9.0-alpha16"]
+ :dependencies   '[[org.clojure/clojure  "1.9.0-alpha17"]
                    [miraj/co-dom         "1.0.0-SNAPSHOT"]
-                   [miraj.polymer/assets "1.2.3-SNAPSHOT"]
+                   [miraj.polymer/assets "1.8.1-SNAPSHOT"]
 
                    ;; for demos and testing
-                   [miraj/core           "0.1.0-SNAPSHOT" :scope "test"]
-                   [miraj/html "5.1.0-SNAPSHOT"           :scope "test"]
-                   [miraj.polymer/dom "1.2.3-SNAPSHOT"    :scope "test"]
+                   ;; [miraj/core           "1.0.0-SNAPSHOT" :scope "test"]
+                   ;; [miraj/html "5.1.0-SNAPSHOT"           :scope "test"]
                    ;; [org.clojure/clojurescript "1.9.473"]
                    ;; [hipo "0.5.2"]
                    ;; [adzerk/boot-cljs "2.0.0-OUTPUTFIX" :scope "test"]
@@ -34,9 +32,9 @@
                    [miraj/boot-miraj     "0.1.0-SNAPSHOT" :scope "test"]
 
                    ;; for demos
-                   [cheshire "5.7.0"                      :scope "test"]
-                   [miraj.polymer/paper "1.2.3-SNAPSHOT"  :scope "test"]
-                   [miraj.polymer/layout "1.2.3-SNAPSHOT" :scope "test"]
+                   ;; [cheshire "5.7.0"                      :scope "test"]
+                   ;; [miraj.polymer/paper "1.2.3-SNAPSHOT"  :scope "test"]
+                   ;; [miraj.polymer/layout "1.2.3-SNAPSHOT" :scope "test"]
 
                    [pandeiro/boot-http "0.7.3"            :scope "test"]
                    [adzerk/boot-test     "1.0.7"          :scope "test"]
@@ -58,7 +56,8 @@
        :description "Miraj Polymer Iron markup functions"
        :url         "https://github.com/miraj-project/polymer-iron"
        :scm         {:url "https://github.com/miraj-project/polymer-iron.git"}
-       :license     {"EPL" "http://www.eclipse.org/legal/epl-v10.html"}})
+       :license     {"EPL" "http://www.eclipse.org/legal/epl-v10.html"}}
+ push {:repo "clojars"})
 
 (deftask build
   "build a component library"
@@ -112,6 +111,12 @@
         (jar)
         (target)
         (install)))
+
+(deftask deploy
+  "deploy to clojars"
+  []
+  (comp (install-local)
+        (push)))
 
 (deftask monitor
   "watch etc."
